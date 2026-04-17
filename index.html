@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Heidi Camba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">Heidi<span> Camba</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">☾</button>
     </nav>
+  </header>
 
-    <header>
-        <img src = "Assets/a47c7ffb-ae2c-494e-a55f-5bf385ee8d68.jpg">
-        <h1>Hi, I'm Heidi S. Camba</h1>
-        <p>A passionate developer and creative problem solver.</p>
-    </header>
-
-    <div class="container" id="about">
-        <h2>About Me</h2>
-        <p>I'm a student from STI Alaminos, pursuing a degree in Information Technology. </p>
-    </div>
-
-    <div class="container" id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Web Programming</h3>
-                <p>Nothing to see here.</p>
-            </div>
-            <div class="project-card">
-                <h3>Mobile Programming</h3>
-                <p>No post yet.</p>
-            </div>
-            <div class="project-card">
-                <h3>Database (SQL)</h3>
-                <p>No post yet.</p>
-            </div>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to my Profile</p>
+        <h1>Hi, I'm <span>Heidi Camba</span> — a creative professional building elegant digital experiences.</h1>
+        <p class="lead">I design thoughtful, polished work that blends strategy, aesthetics, and usability with a soft feminine edge.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
         </div>
-    </div>
+        <ul class="stats">
+          <li><strong>0</strong><span>Projects</span></li>
+          <li><strong>0</strong><span>Years Experience</span></li>
+          <li><strong>0%</strong><span>Client Satisfaction</span></li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="profile-pic"> <img src="Assets/8203047d-4ef0-4173-931a-bd629af9d64f.jpg"></div>
+        <h2>Heidi Camba</h2>
+        <p>UI/UX Designer • Web Developer • Creative Strategist</p>
+        <div class="mini-tags">
+          <span>Dark Mode</span><span>Responsive</span><span>Elegant</span>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="about">
+      <div class="section-head">
+        <p>About</p><h2>Crafting beautiful, functional portfolios.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="panel">
+          <h3>Who I Am</h3>
+          <p>I’m a detail-oriented creator focused on clean layouts, compelling visuals, and user-friendly interfaces that feel modern and memorable.</p>
+        </div>
+        <div class="panel">
+          <h3>What I Do</h3>
+          <p>I build brand-aligned websites, landing pages, and portfolio experiences with strong typography, balanced spacing, and interactive polish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head"><p>Skills</p><h2>Tools and strengths.</h2></div>
+      <div class="skills">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>\
+        <span>UI Design</span><span>Accessibility</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head"><p>Projects</p><h2>Selected work.</h2></div>
+      <div class="projects-grid">
+        <article class="project-card"><h3>Beauty Brand Site</h3><p>Luxury landing page with soft gradients and conversion-focused storytelling.</p></article>
+        <article class="project-card"><h3>Creative Portfolio</h3><p>Minimal multi-section portfolio for a designer with immersive hover interactions.</p></article>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-head"><p>Experience</p><h2>Background and achievements.</h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span>2025 - Present</span><h3>Freelance Designer</h3><p>Created responsive websites and brand identities for clients in lifestyle, beauty, and tech.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p>© 2026 Heidi Camba. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
